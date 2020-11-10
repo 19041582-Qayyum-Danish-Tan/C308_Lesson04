@@ -6,6 +6,11 @@
  * @flow strict-local
  */
 
+
+
+import moment from 'moment';
+import timezone from 'moment-timezone';
+import formatTime from 'moment-format';
 import React from 'react';
 import {
   SafeAreaView,
@@ -50,6 +55,21 @@ class Eats extends React.Component {
   }
 }
 
+
+
+class Clock extends React.Component {
+  render() {
+    var a = moment.tz('Asia/Singapore');
+
+    return (
+        <Text>{this.props.a}</Text>
+
+    );
+  }
+}
+
+
+
 console.log("Listing semester modules and recommended eats");
 
 
@@ -80,6 +100,15 @@ const App: () => React$Node = () => {
               <SemModule day="Tuesday" modCode="C308"/>
               <Text>Recommended Eats @ RP</Text>
               <Eats name="Chicken Chop Shop: "  location="South Canteen South Agora"/>
+              <Clock context />
+
+
+
+
+
+
+
+
 
 
 
