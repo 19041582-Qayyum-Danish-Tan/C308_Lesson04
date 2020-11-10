@@ -100,7 +100,7 @@ const App: () => React$Node = () => {
               <SemModule day="Tuesday" modCode="C308"/>
               <Text>Recommended Eats @ RP</Text>
               <Eats name="Chicken Chop Shop: "  location="South Canteen South Agora"/>
-              <Clock context />
+              <Clock a />
 
 
 
